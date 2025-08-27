@@ -259,7 +259,7 @@ permalink: /projects/
                             <h4 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.25rem;">Polaris</h4>
                             <p style="margin-bottom: 0.6rem;">An experimental modern-age XMPP client.</p>
                             <div class="flex flex-row sm-flex-column">
-                                <a href="https://github.com/TheRandomMelon/polaris">
+                                <a href="https://github.com/ByteOfMelon/polaris">
                                     <button>
                                         <img src="/img/icon/github.png" class="icon" /> GitHub
                                     </button>
