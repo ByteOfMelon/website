@@ -14,7 +14,7 @@
 	<meta property="og:description" content="{{ page.description | escape }} ">
 	<meta property="og:type" content="website">
 	{% if page.image %}
-	<meta property="og:image" content="https://byteofmelon.com/img/posts{{ page.image }}">
+	<meta property="og:image" content="https://byteofmelon.com/{{ page.image }}">
 	{% else %}
 	<meta property="og:image" content="https://byteofmelon.com/img/trm_logo.jpg">
 	{% endif %}
@@ -26,7 +26,7 @@
 	<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
 	<meta name="twitter:description"
 		content="{% if page.desc %}{{ page.desc | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
-	<meta name="twitter:image" content="https://byteofmelon.com/img/posts{{ page.image }}" />
+	<meta name="twitter:image" content="https://byteofmelon.com{{ page.image }}" />
 	{% else %}
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@byteofmelon" />
