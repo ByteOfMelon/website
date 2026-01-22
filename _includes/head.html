@@ -2,8 +2,10 @@
 	<!-- Search Engine Meta -->
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Byte of Melon" />
-	<meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
-	<meta name="keywords" content="trm, therandommelon, trm youtube, therandommelon blog, therandommelon.com, bom, byteofmelon, byte of melon, byteofmelon.com, byte of melon blog, {{ page.keywords | escape }}">
+	<meta name="description"
+		content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+	<meta name="keywords"
+		content="trm, therandommelon, trm youtube, therandommelon blog, therandommelon.com, bom, byteofmelon, byte of melon, byteofmelon.com, byte of melon blog, {{ page.keywords | escape }}">
 
 	<!-- Open Graph  -->
 	<meta property="og:title" content="{{ page.title | escape }}">
@@ -12,7 +14,7 @@
 	<meta property="og:description" content="{{ page.description | escape }} ">
 	<meta property="og:type" content="website">
 	{% if page.image %}
-	<meta property="og:image" content="https://byteofmelon.com/img/posts/{{ page.image }}">
+	<meta property="og:image" content="https://byteofmelon.com/img/posts{{ page.image }}">
 	{% else %}
 	<meta property="og:image" content="https://byteofmelon.com/img/trm_logo.jpg">
 	{% endif %}
@@ -20,22 +22,24 @@
 	<!-- Twitter -->
 	{% if page.image %}
 	<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@byteofmelon" />
-		<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
-		<meta name="twitter:description" content="{% if page.desc %}{{ page.desc | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
-		<meta name="twitter:image" content="https://byteofmelon.com/img/posts/{{ page.image }}" />
+	<meta name="twitter:site" content="@byteofmelon" />
+	<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
+	<meta name="twitter:description"
+		content="{% if page.desc %}{{ page.desc | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
+	<meta name="twitter:image" content="https://byteofmelon.com/img/posts{{ page.image }}" />
 	{% else %}
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@byteofmelon" />
-		<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
-		<meta name="twitter:description" content="{% if page.desc %}{{ page.desc | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@byteofmelon" />
+	<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
+	<meta name="twitter:description"
+		content="{% if page.desc %}{{ page.desc | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
 	{% endif %}
 
 	<title>{% if page.title %}{{ page.title }} - {% endif %} Byte of Melon</title>
 	<meta name=”theme-color” content=”#96B844”>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/7.css">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://unpkg.com/7.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>	
+</head>
