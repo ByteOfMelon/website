@@ -156,30 +156,20 @@ layout: default
                         </div>
                     </div>
                     <div class="flex flex-row items-center" style="margin-top: 1rem;">
-                        <div class="window glass active" style="max-width: calc(64px + 13px); --window-background-color: #5BBE18;">
+                        <div class="window glass active" style="max-width: calc(64px + 13px); --window-background-color: #0F380F;">
                             <div class="title-bar">
                             </div>
                             <div class="window-body" style="height: 64px;">
-                                <img src="/img/projects/leagueopoly.png" style="width: 64px; height: 64px;" />
+                                <img src="/img/projects/gamebyte.webp" style="width: 64px; height: 64px;" />
                             </div>
                         </div>
                         <div class="justify-center items-center" style="margin-left: 1.25rem;">
-                            <h4 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.25rem;">Leagueopoly</h4>
-                            <p style="margin-bottom: 0.6rem;">An esports league based on the Monopoly clone Richup.io. Players compete to earn points based on their per-game ranking. Top two in each conference advance!</p>
+                            <h4 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.25rem;">GameByte</h4>
+                            <p style="margin-bottom: 0.6rem;">A WIP research Game Boy emulator written in C++ and utilizing SDL3.</p>
                             <div class="flex flex-row sm-flex-column">
-                                <a href="https://leagueopoly.com">
+                                <a href="https://github.com/ByteOfMelon/GameByte">
                                     <button>
-                                        <img src="/img/icon/website.ico" class="icon" /> Website
-                                    </button>
-                                </a>
-                                <a class="button-margin" href="https://twitter.com/leagueopoly">
-                                    <button>
-                                        <img src="/img/icon/twitter.png" class="icon" /> Twitter
-                                    </button>
-                                </a>
-                                <a class="button-margin" href="https://instagram.com/leagueopoly">
-                                    <button>
-                                        <img src="/img/icon/instagram.png" class="icon" /> Instagram
+                                        <img src="/img/icon/github.png" class="icon" /> GitHub
                                     </button>
                                 </a>
                             </div>    

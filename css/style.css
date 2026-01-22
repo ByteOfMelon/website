@@ -2,8 +2,8 @@
 @font-face {
     font-family: "Selawik";
     src: url("/font/selawk.woff2") format("woff2"),
-         url("/font/selawk.woff") format("woff"),
-         url("/font/selawk.ttf") format("truetype");
+        url("/font/selawk.woff") format("woff"),
+        url("/font/selawk.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -12,8 +12,8 @@
 @font-face {
     font-family: "Selawik";
     src: url("/font/selawkb.woff2") format("woff2"),
-         url("/font/selawkb.woff") format("woff"),
-         url("/font/selawkb.ttf") format("truetype");
+        url("/font/selawkb.woff") format("woff"),
+        url("/font/selawkb.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
@@ -22,8 +22,8 @@
 @font-face {
     font-family: "Selawik";
     src: url("/font/selawksb.woff2") format("woff2"),
-         url("/font/selawksb.woff") format("woff"),
-         url("/font/selawksb.ttf") format("truetype");
+        url("/font/selawksb.woff") format("woff"),
+        url("/font/selawksb.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
@@ -39,7 +39,11 @@ body {
     background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #809D6D;
     font-weight: normal;
 }
@@ -125,10 +129,338 @@ button .icon {
     cursor: pointer;
 }
 
-.blog-post-content h1:not(:first-child), .blog-post-content h2:not(:first-child), .blog-post-content h3:not(:first-child), .blog-post-content h4:not(:first-child), .blog-post-content h5:not(:first-child) {
-    margin-top: 10px;
+.blog-post-content h1:not(:first-child),
+.blog-post-content h2:not(:first-child),
+.blog-post-content h3:not(:first-child),
+.blog-post-content h4:not(:first-child),
+.blog-post-content h5:not(:first-child) {
+    margin-top: 8px;
 }
 
-.blog-post-content h1, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5 {
-    margin-bottom: 10px;
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5 {
+    margin-bottom: 8px;
+}
+
+.blog-post-content p {
+    margin-bottom: 16px;
+}
+
+.blog-post-content div.highlighter-rouge {
+    margin-bottom: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.blog-post-content pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.blog-post-content code {
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+.blog-post-content img:not(.no-resize) {
+    width: 50%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 640px) {
+    .blog-post-content img:not(.no-resize) {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+/* syntax highlighting */
+.highlight .hll {
+    background-color: #282c34
+}
+
+.highlight .c {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .err {
+    color: #e06c75;
+    background-color: #282c34
+}
+
+.highlight .k {
+    color: #c678dd
+}
+
+.highlight .o {
+    color: #56b6c2
+}
+
+.highlight .ch {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .cm {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .cp {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .cpf {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .c1 {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .cs {
+    color: #5c6370;
+    font-style: italic
+}
+
+.highlight .gd {
+    color: #e06c75
+}
+
+.highlight .ge {
+    font-style: italic
+}
+
+.highlight .gr {
+    color: #e06c75
+}
+
+.highlight .gh {
+    color: #61aeee;
+    font-weight: bold
+}
+
+.highlight .gi {
+    color: #98c379
+}
+
+.highlight .go {
+    color: #abb2bf
+}
+
+.highlight .gp {
+    color: #5c6370
+}
+
+.highlight .gs {
+    font-weight: bold
+}
+
+.highlight .gu {
+    color: #61aeee;
+    font-weight: bold
+}
+
+.highlight .gt {
+    color: #e06c75
+}
+
+.highlight .kc {
+    color: #c678dd
+}
+
+.highlight .kd {
+    color: #c678dd
+}
+
+.highlight .kn {
+    color: #c678dd
+}
+
+.highlight .kp {
+    color: #c678dd
+}
+
+.highlight .kr {
+    color: #c678dd
+}
+
+.highlight .kt {
+    color: #e5c07b
+}
+
+.highlight .m {
+    color: #d19a66
+}
+
+.highlight .s {
+    color: #98c379
+}
+
+.highlight .na {
+    color: #e06c75
+}
+
+.highlight .nb {
+    color: #56b6c2
+}
+
+.highlight .nc {
+    color: #e5c07b
+}
+
+.highlight .no {
+    color: #d19a66
+}
+
+.highlight .nd {
+    color: #61aeee
+}
+
+.highlight .ni {
+    color: #abb2bf
+}
+
+.highlight .ne {
+    color: #e06c75
+}
+
+.highlight .nf {
+    color: #61aeee
+}
+
+.highlight .nl {
+    color: #abb2bf
+}
+
+.highlight .nn {
+    color: #e5c07b
+}
+
+.highlight .nt {
+    color: #e06c75
+}
+
+.highlight .nv {
+    color: #e06c75
+}
+
+.highlight .ow {
+    color: #c678dd
+}
+
+.highlight .w {
+    color: #abb2bf
+}
+
+.highlight .mb {
+    color: #d19a66
+}
+
+.highlight .mf {
+    color: #d19a66
+}
+
+.highlight .mh {
+    color: #d19a66
+}
+
+.highlight .mi {
+    color: #d19a66
+}
+
+.highlight .mo {
+    color: #d19a66
+}
+
+.highlight .sa {
+    color: #98c379
+}
+
+.highlight .sb {
+    color: #98c379
+}
+
+.highlight .sc {
+    color: #98c379
+}
+
+.highlight .dl {
+    color: #98c379
+}
+
+.highlight .sd {
+    color: #98c379
+}
+
+.highlight .s2 {
+    color: #98c379
+}
+
+.highlight .se {
+    color: #98c379
+}
+
+.highlight .sh {
+    color: #98c379
+}
+
+.highlight .si {
+    color: #98c379
+}
+
+.highlight .sx {
+    color: #98c379
+}
+
+.highlight .sr {
+    color: #98c379
+}
+
+.highlight .s1 {
+    color: #98c379
+}
+
+.highlight .ss {
+    color: #98c379
+}
+
+.highlight .bp {
+    color: #56b6c2
+}
+
+.highlight .fm {
+    color: #61aeee
+}
+
+.highlight .vc {
+    color: #e06c75
+}
+
+.highlight .vg {
+    color: #e06c75
+}
+
+.highlight .vi {
+    color: #e06c75
+}
+
+.highlight .vm {
+    color: #e06c75
+}
+
+.highlight .il {
+    color: #d19a66
 }
